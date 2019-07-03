@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+main {
+    width: 90%;
+    margin: 30px auto;
+}
+
+menu {
+   margin-bottom: 40px;
+   a {
+      margin-right: 20px;
+      color: #333;
+   }
+}
+
+.search-stops {
+    margin: 20px 0;
+    input {
+        padding: 10px;
+        width: 400px;
+    }
+}
+.stop-points-list {
+    li {
+        margin: 8px 0;
+    }
+    a {
+        color: #333;
+    }
+}
+
+.transport-list {
+    li {
+        margin: 20px 0;
+        div p {
+            margin: 5px 0;
+        }
+        p {
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.routes-list {
+    display: flex;
+    flex-direction: column;
+}
+.routes-item {
+   padding: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   border-bottom: 1px solid #ccc;
+   h2 {
+      width: 100%;
+      margin-bottom: 10px;
+   }
+   .route {
+      margin: 5px;
+   }
+}
+
+.route-directions {
+   border-bottom: 1px solid #ccc;
+}
