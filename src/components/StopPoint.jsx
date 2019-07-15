@@ -22,9 +22,6 @@ class StopPoint extends Component {
    }
 
    successGetData = (response) => {
-      var responseText = JSON.stringify(response, null, ' ');
-      console.log(responseText);
-
       this.setState({
          arrivalsData: response
       })
