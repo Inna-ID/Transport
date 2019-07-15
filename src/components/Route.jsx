@@ -6,7 +6,6 @@ class Route extends Component {
       this.state = {
          routeInfo: this.props.location.state.routeInfo
       }
-      console.log(this.state.routeInfo);
    }
 
    render() {
