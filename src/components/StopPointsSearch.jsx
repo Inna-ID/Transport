@@ -12,9 +12,6 @@ class StopPointsSearch extends Component {
    }
 
    successGetData = (response) => {
-      var responseText = JSON.stringify(response, null, ' ');
-      console.log(responseText);
-
       this.setState({
          stopPoints: response.matches
       })
