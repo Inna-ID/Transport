@@ -17,16 +17,12 @@ class Routes extends Component {
    }
 
    successGetData = (response) => {
-      let responseText = JSON.stringify(response, null, ' ');
-      console.log(responseText);
       let busArr = [],
          tubeArr = [],
          overgroundArr = [],
          railArr = [],
-         //tramArr = [],
          riverTourArr = [],
          riverBusArr = [],
-         //CableCarArr = [],
          otherArr = [];
 
       response.forEach(function (item) {
@@ -35,10 +31,8 @@ class Routes extends Component {
             case 'tube': tubeArr.push(item); break;
             case 'overground': overgroundArr.push(item); break;
             case 'national-rail': railArr.push(item); break;
-            //case 'tram': tramArr.push(item); break;
             case 'river-tour': riverTourArr.push(item); break;
             case 'river-bus': riverBusArr.push(item); break;
-            //case 'cable-car': CableCarArr.push(item); break;
             default: otherArr.push(item); break;
          }
 
